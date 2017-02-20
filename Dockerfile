@@ -23,7 +23,5 @@ RUN chmod a+x /usr/bin/start-kafka.sh && \
     chmod a+x /usr/bin/broker-list.sh && \
     chmod a+x /usr/bin/create-topics.sh
 
-EXPOSE 9092
-
 # Use "exec" form so that it runs as PID 1 (useful for graceful shutdown)
 CMD ["start-kafka.sh"]
